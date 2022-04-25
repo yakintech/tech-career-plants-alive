@@ -1,0 +1,6 @@
+module Pods_PlantAlive {
+  umbrella header "Pods-PlantAlive-umbrella.h"
+
+  export *
+  module * { export * }
+}
