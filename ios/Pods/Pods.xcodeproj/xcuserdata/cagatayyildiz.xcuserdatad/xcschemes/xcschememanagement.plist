@@ -99,6 +99,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>RNScreens.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>RNVectorIcons.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>React-Codegen.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -245,6 +255,16 @@
 			<false/>
 		</dict>
 		<key>libevent.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>react-native-safe-area-context.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>react-native-splash-screen.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
