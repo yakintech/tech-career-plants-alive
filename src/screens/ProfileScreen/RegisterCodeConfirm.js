@@ -2,21 +2,42 @@ import React from 'react'
 import { Button, StyleSheet, TextInput, View, Text } from 'react-native';
 import { Formik } from 'formik';
 import * as yup from 'yup'
-const RegisterCodeConfirm = () => {
+import baseManager from '../../api/baseManager';
+import { setUserToStorage } from '../../helper/StorageHelper';
+const RegisterCodeConfirm = ({ navigation, route }) => {
+
+    const { email } = route.params;
 
     const confirmCodeValidation = yup.object().shape({
         confirmCode: yup
             .string()
-            .email("Please enter valid confirmCode")
             .required('ConfirmCode is Required')
-    })
+    });
+
+    const confirm = (values) => {
+        //apiye code ve email gönderilecek
+
+        baseManager.add('/api/confirm', {email:email, confirmCode : values.confirmCode })
+        .then((data) => {
+            alert("Üye kaydınız başarıyla tamamlanmıştır!");
+
+            setUserToStorage({email:email}).then((res) => {
+
+                navigation.navigate("home");
+            })
+
+        })
+        .catch((err) => {
+            alert("Girdiğiniz kod hatalıdır. Lütfen tekrar deneyiniz!")
+        })
+    }
 
     return (
-   
+
         <Formik
             validationSchema={confirmCodeValidation}
             initialValues={{ confirmCode: '' }}
-            onSubmit={values => console.log(values)}
+            onSubmit={values => confirm(values)}
         >
             {({ handleChange, handleSubmit, values, errors }) => (
                 <View>
@@ -30,14 +51,14 @@ const RegisterCodeConfirm = () => {
                     {errors.confirmCode &&
                         <Text style={{ fontSize: 10, color: 'red' }}>{errors.confirmCode}</Text>
                     }
-                  
-                    
+
+
                     <Button onPress={handleSubmit} title="Submit" />
                 </View>
             )}
         </Formik>
-    
-    
+
+
     )
 }
 

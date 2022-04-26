@@ -2,8 +2,9 @@ import React from 'react'
 import { Button, StyleSheet, TextInput, View, Text } from 'react-native';
 import { Formik } from 'formik';
 import * as yup from 'yup'
+import baseManager from '../../api/baseManager';
 
-const RegisterScreen = ({navigation}) => {
+const RegisterScreen = ({ navigation }) => {
 
     const registerValidationSchema = yup.object().shape({
         email: yup
@@ -20,9 +21,14 @@ const RegisterScreen = ({navigation}) => {
 
     const register = (values) => {
 
-        //API işlemleri
+        baseManager.add("/api/register", values)
+            .then((data) => {
+                navigation.navigate("RegisterCodeConfirm", { email: values.email })
+            })
+            .catch(() => {
+                alert("İşlem sırasında bir hata meydana geldi!")
+            })
 
-        navigation.navigate("RegisterCodeConfirm")
     }
 
     return (
@@ -68,8 +74,8 @@ const RegisterScreen = ({navigation}) => {
                 </View>
             )}
         </Formik>
-    
-    
+
+
     )
 }
 

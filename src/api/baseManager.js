@@ -24,12 +24,42 @@ const baseManager = {
         .then(res => res.json())
         .then((data) => {
             responseData = data;
-        });
+        })
 
     return responseData;
 
     },
-    add: () => {
+    add: async (url, data) => {
+    
+        let responseData = {};
+
+        let requestOptions = {
+            method: 'POST',
+            headers: {
+              'Accept': 'application/json',
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+          }
+
+        await fetch(API_URL + url, requestOptions)
+        .then(res => {
+            if(res.status == 500){
+                throw "add error";
+            }
+            else{
+                return res.json();
+            }
+        })
+        .then((data) => {
+            responseData = data;
+        })
+        .catch((err) => {
+            throw "add error";
+        })
+
+
+        return responseData;
 
     },
     delete: () => {
