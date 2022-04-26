@@ -7,6 +7,7 @@ import React from 'react';
 import Ionicons from 'react-native-vector-icons/Ionicons'
 import FontAwesome from 'react-native-vector-icons/FontAwesome'
 import { SafeAreaView } from 'react-native-safe-area-context';
+import ProfileStack from '../screens/ProfileScreen/ProfileStack';
 
 const Tab = createBottomTabNavigator();
 
@@ -43,7 +44,7 @@ const BottomTabNav = () => {
         <Tab.Screen name="home" component={HomeScreen} />
         <Tab.Screen name="leaf" component={PlantsScreen} />
         <Tab.Screen name="search" component={SearchScreen} />
-        <Tab.Screen name="profile" component={ProfileScreen} />
+        <Tab.Screen name="profile" component={ProfileStack} />
       </Tab.Navigator>
 
 
