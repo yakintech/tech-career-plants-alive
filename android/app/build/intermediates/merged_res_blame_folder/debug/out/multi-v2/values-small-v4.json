@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\ReactNative\\tech-career-plants-alive\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-small-v4\\values-small-v4.xml",
+            "outputFile": "C:\\Users\\omer\\Desktop\\tech-career-plants-alive\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-small-v4\\values-small-v4.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\omer0\\.gradle\\caches\\transforms-3\\f61858ab2d463bfc75fa0b69b40e6339\\transformed\\material-1.1.0\\res\\values-small-v4\\values-small-v4.xml",
+                    "source": "C:\\Users\\omer\\.gradle\\caches\\transforms-3\\f61858ab2d463bfc75fa0b69b40e6339\\transformed\\material-1.1.0\\res\\values-small-v4\\values-small-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",

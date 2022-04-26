@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/PlantAlive.iml" filepath="$PROJECT_DIR$/.idea/modules/PlantAlive.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/PlantAlive.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/PlantAlive.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-424225515/PlantAlive.react-native-safe-area-context.iml" filepath="$PROJECT_DIR$/.idea/modules/-424225515/PlantAlive.react-native-safe-area-context.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/621845357/PlantAlive.react-native-screens.iml" filepath="$PROJECT_DIR$/.idea/modules/621845357/PlantAlive.react-native-screens.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1625676552/PlantAlive.react-native-splash-screen.iml" filepath="$PROJECT_DIR$/.idea/modules/-1625676552/PlantAlive.react-native-splash-screen.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-23453782/PlantAlive.react-native-vector-icons.iml" filepath="$PROJECT_DIR$/.idea/modules/-23453782/PlantAlive.react-native-vector-icons.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-344421761/react-native-gradle-plugin.iml" filepath="$PROJECT_DIR$/.idea/modules/-344421761/react-native-gradle-plugin.iml" />
+    </modules>
+  </component>
+</project>
