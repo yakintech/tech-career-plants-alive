@@ -8,6 +8,7 @@ import Ionicons from 'react-native-vector-icons/Ionicons'
 import FontAwesome from 'react-native-vector-icons/FontAwesome'
 import { SafeAreaView } from 'react-native-safe-area-context';
 import ProfileStack from '../screens/ProfileScreen/ProfileStack';
+import CameraScreen from '../screens/CameraScreen/CameraScreen';
 
 const Tab = createBottomTabNavigator();
 
@@ -21,6 +22,9 @@ const BottomTabNav = () => {
             switch (route.name) {
               case 'home':
                 iconName = focused ? 'home' : 'home-outline';
+                break;
+                case 'camera':
+                iconName = focused ? 'camera' : 'camera-outline';
                 break;
               case 'search':
                 iconName = focused ? 'search' : 'search-outline';
@@ -43,6 +47,7 @@ const BottomTabNav = () => {
         })} >
         <Tab.Screen name="home" component={HomeScreen} />
         <Tab.Screen name="leaf" component={PlantsScreen} />
+        <Tab.Screen name="camera" component={CameraScreen} />
         <Tab.Screen name="search" component={SearchScreen} />
         <Tab.Screen name="profile" component={ProfileStack} />
       </Tab.Navigator>

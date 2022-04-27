@@ -7,9 +7,18 @@ import Router from './src/navigation/index';
 
 const App = () => {
 
+
+
   useEffect(() => {
-    SplashScreen.hide();
-  }, [])
+    
+  }, []);
+
+
+
+
+  // useEffect(() => {
+  //   SplashScreen.hide();
+  // }, [])
 
   // useEffect(() => {
 
@@ -36,7 +45,7 @@ const App = () => {
   // }, [])
 
   return (
-    <View style={{flex: 1}}>
+    <View style={{ flex: 1 }}>
       <Router />
     </View>
   )

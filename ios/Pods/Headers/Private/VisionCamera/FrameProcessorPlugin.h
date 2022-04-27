@@ -1,0 +1,1 @@
+../../../../../node_modules/react-native-vision-camera/ios/Frame Processor/FrameProcessorPlugin.h

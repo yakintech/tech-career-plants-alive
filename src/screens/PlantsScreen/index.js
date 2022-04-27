@@ -26,7 +26,7 @@ const PlantsScreen = () => {
 
 
   return (
-    <ScrollView
+    <View
       style={{ paddingHorizontal: 20, paddingVertical: 10, marginVertical: 10 }}
     >
       <Text style={{ fontSize: 30, fontWeight: "500", color: "#32502E" }}>
@@ -42,7 +42,7 @@ const PlantsScreen = () => {
         keyExtractor={(item) => item.id}
         renderItem={({ item }) => <PlantItem plant={item} />}
       />
-    </ScrollView>
+    </View>
   );
 };
 

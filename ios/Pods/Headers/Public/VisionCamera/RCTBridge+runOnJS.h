@@ -1,0 +1,1 @@
+../../../../../node_modules/react-native-vision-camera/ios/React Utils/RCTBridge+runOnJS.h
